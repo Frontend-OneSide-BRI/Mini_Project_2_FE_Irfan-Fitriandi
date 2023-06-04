@@ -1,11 +1,12 @@
-import React from "react";
+import Header from "../Header";
+import Footer from "../Footer";
 
 const Layout = ({ children }) => {
   return (
     <>
-      <nav>Navbar</nav>
-      <main className="lg:w-[1400px] lg:mx-auto m-4">{children}</main>
-      <footer>Footer</footer>
+      <Header />
+      <main>{children}</main>
+      <Footer />
     </>
   );
 };
